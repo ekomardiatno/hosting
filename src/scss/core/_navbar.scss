@@ -1,0 +1,17 @@
+.header-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+}
+.navbar {
+  padding: 1rem;
+}
+.navbar-brand {
+  img {
+    height: 40px;
+  }
+}
+.navbar-nav .nav-link {
+  // font-size: 1.25rem;
+}

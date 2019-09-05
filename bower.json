@@ -1,0 +1,25 @@
+{
+  "name": "hosting",
+  "description": "Template web hosting services",
+  "main": "index.js",
+  "authors": [
+    "Eko Mardiatno"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Template"
+  ],
+  "homepage": "https://github.com/ekomardiatno/hosting",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "bootstrap": "^4.3.1"
+  }
+}

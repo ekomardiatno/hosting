@@ -1,0 +1,35 @@
+.main-section-homepage {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 100vh;
+  .cloud {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/cloud.png) no-repeat;
+    background-size: cover;
+    height: 220px;
+    z-index: 1000;
+    display: none;
+    &.absolute-position {
+      position: absolute !important;
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .main-section-homepage {
+    .cloud {
+      display: block;
+    }
+  }
+}
+
+@media(min-width: 1400px) {
+  .main-section-homepage {
+    .cloud {
+      height: 275px;
+    }
+  }
+}
