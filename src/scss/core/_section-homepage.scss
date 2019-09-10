@@ -16,6 +16,20 @@
       position: absolute !important;
     }
   }
+
+  .naration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    h1 {
+      font-weight: 800;
+    }
+  }
 }
 
 @media(min-width: 1200px) {

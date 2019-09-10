@@ -1,7 +1,6 @@
 /*!
  * ================================
- * Copyright 2019 Eko Mardiatno.
- * Licensed under the MIT license
+ * Plugins By Eko Mardiatno.
  * instagram @komafx
  * wa.me/6282219299071
  * email: ekomardiatno@gmail.com

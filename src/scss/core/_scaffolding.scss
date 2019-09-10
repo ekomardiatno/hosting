@@ -13,3 +13,16 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+@each $name, $color in $brand {
+  .text-#{$name} {
+    color: $color !important;
+  }
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}

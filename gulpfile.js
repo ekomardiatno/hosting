@@ -71,6 +71,7 @@ function libs(done) {
   gulp.src([
     config.bower + '/bootstrap/dist/css/bootstrap.min.css',
     config.bower + '/bootstrap/dist/css/bootstrap.min.css.map',
+    config.bower + '/animate.css/animate.min.css'
   ])
     .pipe(gulp.dest('./dist/assets/css'))
 
@@ -132,6 +133,10 @@ function watch(done) {
     './src/images/*.**',
     './src/images/*/*.**'
   ], images)
+
+  gulp.watch([
+    './src/fonts/*.**'
+  ], fonts)
 
   done()
 

@@ -1,0 +1,14 @@
+.animated {
+  &.delay-250ms {
+    -webkit-animation-delay: 250ms;
+    animation-delay: 250ms;
+  }
+  &.delay-500ms {
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+  }
+  &.delay-750ms {
+    -webkit-animation-delay: 750ms;
+    animation-delay: 750ms;
+  }
+}
