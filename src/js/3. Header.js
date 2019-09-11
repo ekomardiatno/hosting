@@ -3,19 +3,27 @@
   $.fn.headerAnim = function () {
     return this.each(function () {
       var top = $(this).find('.top'),
-          topHeight = top.outerHeight()
+          nav = $(this).find('.navbar')
       $(window).on('scroll', function(e) {
-        var pageYOffset = e.currentTarget.pageYOffset
-        if(pageYOffset >= topHeight) {
-          top.css({
-            transition: 'margin .35s ease-in',
-            marginTop: topHeight * -1
-          })
-        } else {
-          top.css({
-            transition: 'margin .35s ease-in',
-            marginTop: 0
-          })
+        var topHeight = top.outerHeight(),
+            height = e.currentTarget.innerHeight,
+            width = e.currentTarget.innerWidth,
+            pageYOffset = e.currentTarget.pageYOffset
+        
+        if(width > 991) {
+          if(pageYOffset >= topHeight) {
+            var css = {
+              transform: 'translateY(-' + topHeight + 'px)'
+            }
+            top.css(css)
+            nav.css(css)
+          } else {
+            var css = {
+              transform: 'none'
+            }
+            top.css(css)
+            nav.css(css)
+          }
         }
       })
     })

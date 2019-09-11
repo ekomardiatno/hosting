@@ -4,14 +4,18 @@
     var el = $(this)
     $(window).on('scroll', function (e) {
       var height = e.currentTarget.innerHeight,
+          width = e.currentTarget.innerWidth,
           offsetTop = e.currentTarget.pageYOffset
-      if(offsetTop >= height) {
-        el.removeClass('fadeInDown').removeClass('animated')
-        el.addClass('fadeOutUp animated')
-      } else {
-        if(el.hasClass('fadeOutUp')) {
-          el.removeClass('fadeOutUp').removeClass('animated')
-          el.addClass('fadeInDown animated')
+
+      if(width >= 1200) {
+        if(offsetTop >= height) {
+          el.removeClass('fadeInDown').removeClass('animated')
+          el.addClass('fadeOutUp animated')
+        } else {
+          if(el.hasClass('fadeOutUp')) {
+            el.removeClass('fadeOutUp').removeClass('animated')
+            el.addClass('fadeInDown animated')
+          }
         }
       }
     })

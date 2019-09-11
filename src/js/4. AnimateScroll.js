@@ -42,9 +42,13 @@
           var wintop = $(window).scrollTop()
           startAnimation(wintop, top, height, parent, nameClass, repeat)
 
-          $(window).on('scroll', function () {
-              var wintop = $(this).scrollTop()
-              startAnimation(wintop, top, height, parent, nameClass, repeat)
+          $(window).on('scroll', function (e) {
+              var wintop = $(this).scrollTop(),
+                  wScr = e.currentTarget.innerWidth
+
+              if(wScr >= 1200) {
+                startAnimation(wintop, top, height, parent, nameClass, repeat)
+              }
           })
       })
   }

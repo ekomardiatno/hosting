@@ -25,6 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+[class^="dripicons-"],
+[class*=" dripicons-"] {
+  vertical-align: middle;
+}
+
 [class^="dripicons-"]:before,
 [class*=" dripicons-"]:before {
   font-family: "dripicons-v2" !important;

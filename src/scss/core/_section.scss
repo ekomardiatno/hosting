@@ -1,0 +1,14 @@
+.section {
+  padding: 3rem 0;
+  &.section-top-home {
+    margin-top: -3rem;
+  }
+}
+
+@media(max-width: 1200px) {
+  .section {
+    &.section-top-home {
+      margin-top: 0;
+    }
+  }
+}

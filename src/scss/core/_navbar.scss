@@ -1,11 +1,16 @@
-.header-section {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1001;
-}
 .navbar {
   padding: 1rem;
+  transition: all .35s ease-in;
+  background-color: $white;
+  .navbar-toggler {
+    outline: 0;
+    padding: .25rem .4rem;
+    border: 0;
+    background-color: #ff9800;
+    span {
+      color: $white;
+    }
+  }
 }
 .navbar-brand {
   img {
@@ -13,5 +18,66 @@
   }
 }
 .navbar-nav .nav-link {
-  // font-size: 1.25rem;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+}
+
+@media(max-width: 991px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: .75rem 1rem;
+    .navbar-brand {
+      opacity: 0;
+      transition: opacity .35s ease-in;
+    }
+    &.affix {
+      background-color: $white;
+      .navbar-brand {
+        opacity: 1;
+      }
+    }
+    .navbar-collapse {
+      position: fixed;
+      display: block;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      left: -300px;
+      padding: 1rem;
+      padding-top: 3rem;
+      background-color: $gray-dark;
+      transition: left .35s ease-in;
+      .nav-link {
+        padding: 1rem;
+        color: $white;
+        &.active {
+          color: $warning;
+        }
+      }
+      &.opened {
+        left: 0;
+      }
+    }
+    .overlay-opened {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,.25);
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .navbar {
+    .navbar-collapse {
+      width: 240px;
+      left: -240px;
+    }
+  }
 }
