@@ -150,6 +150,10 @@ function server(done) {
     livereload: {
       port: 35721
     },
+    host: [
+      'localhost',
+      '192.168.93.25'
+    ],
     port: 8888
   })
 

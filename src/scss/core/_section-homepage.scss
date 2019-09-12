@@ -32,10 +32,18 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 992px) {
   .main-section-homepage {
     .cloud {
       display: block;
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .main-section-homepage {
+    .cloud {
+      height: 165px;
     }
   }
 }

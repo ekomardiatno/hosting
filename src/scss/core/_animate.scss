@@ -12,3 +12,12 @@
     animation-delay: 750ms;
   }
 }
+
+@media(min-width: 992px) {
+  .animation-wrap {
+    opacity: 0;
+    &.animated {
+      opacity: 1;
+    }
+  }
+}

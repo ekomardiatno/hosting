@@ -1,0 +1,20 @@
+.nav-pills {
+  background-color: $gray-lighter;
+  border-radius: .25rem;
+  padding: .5rem;
+  .nav-link {
+    color: $gray-dark;
+  }
+  .nav-link.active {
+    background-color: $warning;
+    @include color-yiq($warning);
+    @include shadow-small($warning);
+  }
+  .show {
+    >.nav-link {
+      background-color: $warning;
+      @include color-yiq($warning);
+      @include shadow-small($warning);
+    }
+  }
+}

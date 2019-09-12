@@ -63,7 +63,7 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 992px) {
   .main-rocket {
     display: block;
   }
@@ -73,6 +73,14 @@
   .animated-rocket {
     .rocket-wrapper {
       right: 250px;
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .animated-rocket {
+    .rocket-wrapper {
+      right: 120px;
     }
   }
 }
