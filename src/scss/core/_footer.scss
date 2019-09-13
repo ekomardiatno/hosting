@@ -1,0 +1,50 @@
+.footer {
+  padding: 1rem 0;
+  background-color: $gray-dark;
+  color: $white;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -.5rem;
+  .logo-kominfo {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/logo-kominfo.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $white;
+    border-radius: 50%;
+    margin: 0 .5rem;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: .5rem;
+    &:first-child {
+      justify-content: flex-start;
+    }
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .footer-content {
+    flex-direction: column;
+    div {
+      text-align: center;
+    }
+  }
+}

@@ -1,7 +1,46 @@
 .section {
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   &.section-top-home {
     margin-top: -3rem;
+  }
+}
+
+.description-services {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  div {
+    &:first-child {
+      flex: 1;
+      padding-right: .75rem;
+    }
+    &:last-child {
+      flex-basis: 300px;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .description-services {
+    div {
+      &:last-child {
+        flex-basis: 200px;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .description-services {
+    flex-direction: column;
+    div {
+      &:first-child {
+        margin-bottom: 3rem;
+      }
+      &:last-child {
+        flex-basis: auto;
+      }
+    }
   }
 }
 

@@ -19,6 +19,13 @@
 }
 .navbar-nav .nav-link {
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media(min-width: 992px) {
+  .navbar {
+    box-shadow: 0 5px 10px rgba(0,0,0,.05);
+  }
 }
 
 @media(max-width: 991px) {
@@ -35,6 +42,7 @@
     }
     &.affix {
       background-color: $white;
+      box-shadow: 0 5px 10px rgba(0,0,0,.05);
       .navbar-brand {
         opacity: 1;
       }

@@ -8,6 +8,7 @@ body {
   font-weight: normal;
   line-height: 1.45;
   overflow-x: hidden;
+  color: $text-color;
 }
 .homepage {
   background: url(../images/homepage-bg.jpg) no-repeat center center fixed;
@@ -28,6 +29,10 @@ body {
 
 .bg-transparent {
   background-color: transparent !important;
+}
+
+.bg-gray-lighter {
+  background-color: $gray-lighter;
 }
 
 @media(min-width: 1440px) {
