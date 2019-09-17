@@ -11,7 +11,7 @@
             pageYOffset = e.currentTarget.pageYOffset
         
         if(width > 991) {
-          if(pageYOffset >= topHeight) {
+          if(pageYOffset >= topHeight / 2) {
             var css = {
               transform: 'translateY(-' + topHeight + 'px)'
             }

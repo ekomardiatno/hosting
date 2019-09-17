@@ -8,7 +8,7 @@
           offsetTop = e.currentTarget.pageYOffset
 
       if(width >= 1200) {
-        if(offsetTop >= height) {
+        if(offsetTop >= height / 5) {
           el.removeClass('fadeInDown').removeClass('animated')
           el.addClass('fadeOutUp animated')
         } else {

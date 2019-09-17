@@ -7,6 +7,10 @@
   .nav-link {
     color: $gray-dark;
     text-align: center;
+    transition: all .25s ease-in;
+    &:hover {
+      background-color: rgba(0,0,0,.05);
+    }
   }
   .nav-link.active {
     background-color: $warning;
@@ -28,6 +32,7 @@
     width: auto;
     .nav-link {
       text-align: left;
+      margin: 0 .15rem;
     }
   }
 }

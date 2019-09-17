@@ -1,5 +1,6 @@
 .section {
   padding: 3rem 0;
+  position: relative;
   &.section-top-home {
     margin-top: -3rem;
   }
@@ -41,6 +42,54 @@
         flex-basis: auto;
       }
     }
+  }
+}
+
+.section-page-header {
+  position: relative;
+  padding-top: 150.86px;
+  &.faq {
+    background-image: url(../images/faq.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.35);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url(../images/overlay.png);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .fill-sph {
+    position: relative;
+    padding: 100px 0;
+  }
+}
+
+@media(min-width: 992px) {
+  .section-page-header {
+    padding-top: 137.83px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .section-page-header {
+    padding-top: 157.7px;
   }
 }
 

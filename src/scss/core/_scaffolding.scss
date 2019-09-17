@@ -18,6 +18,16 @@ body {
   background-size: cover;
 }
 
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 5%);
+  }
+  &:focus {
+    color: darken($primary, 15%);
+  }
+}
+
 @each $name, $color in $brand {
   .text-#{$name} {
     color: $color !important;
