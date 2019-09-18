@@ -9,12 +9,12 @@
 
       if(width >= 1200) {
         if(offsetTop >= height / 5) {
-          el.removeClass('fadeInDown').removeClass('animated')
+          el.removeClass('fadeInUp').removeClass('animated')
           el.addClass('fadeOutUp animated')
         } else {
           if(el.hasClass('fadeOutUp')) {
             el.removeClass('fadeOutUp').removeClass('animated')
-            el.addClass('fadeInDown animated')
+            el.addClass('fadeInUp animated')
           }
         }
       }

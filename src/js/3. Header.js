@@ -13,13 +13,13 @@
         if(width > 991) {
           if(pageYOffset >= topHeight / 2) {
             var css = {
-              transform: 'translateY(-' + topHeight + 'px)'
+              transform: 'translateY(-' + topHeight + 'px)',
             }
             top.css(css)
             nav.css(css)
           } else {
             var css = {
-              transform: 'none'
+              transform: 'translateY(-' + pageYOffset + 'px)',
             }
             top.css(css)
             nav.css(css)
