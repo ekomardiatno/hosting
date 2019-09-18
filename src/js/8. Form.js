@@ -16,6 +16,9 @@
         if(valLength > 0) {
           $(this).parent('.form-wrapper').addClass('filled')
         }
+        if($(this).is(':focus')) {
+          $(this).parent('.form-wrapper').addClass('focused')
+        }
         $(this).on('focus', function () {
           $(this).parent('.form-wrapper').addClass('focused')
         })

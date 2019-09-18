@@ -1,18 +1,24 @@
 +function ($) {
   'use strict'
 
+  function doAffix(width, pageY, topOffset, navbar) {
+    if(width <= 991) {
+      if(pageY >= topOffset) {
+        navbar.addClass('affix')
+      } else {
+        navbar.removeClass('affix')
+      }
+    }
+  }
+
   function affix(topOffset, navbar) {
+    var pageY = $(window).scrollTop(),
+        width = $(window).innerWidth()
+    doAffix(width, pageY, topOffset, navbar)
     $(window).on('scroll', function (e) {
       var pageY = e.currentTarget.pageYOffset,
           width = e.currentTarget.innerWidth
-
-      if(width <= 991) {
-        if(pageY >= topOffset) {
-          navbar.addClass('affix')
-        } else {
-          navbar.removeClass('affix')
-        }
-      }
+      doAffix(width, pageY, topOffset, navbar)
     })
   }
 
