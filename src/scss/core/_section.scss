@@ -48,11 +48,14 @@
 .section-page-header {
   position: relative;
   padding-top: 150.86px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   &.faq {
     background-image: url(../images/faq.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  }
+  &.contact {
+    background-image: url(../images/contact.jpg);
   }
   &::before {
     position: absolute;
@@ -77,19 +80,21 @@
   }
   .fill-sph {
     position: relative;
-    padding: 100px 0;
+    height: 360px;
+    display: flex;
+    align-items: center;
   }
 }
 
 @media(min-width: 992px) {
   .section-page-header {
-    padding-top: 137.83px;
+    padding-top: 130.56px;
   }
 }
 
 @media(min-width: 1400px) {
   .section-page-header {
-    padding-top: 157.7px;
+    padding-top: 149.27px;
   }
 }
 

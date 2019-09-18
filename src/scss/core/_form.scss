@@ -1,0 +1,41 @@
+.form-control {
+  border: 0;
+  border-bottom: 1px solid $border-color;
+  border-radius: 0;
+  padding: .5rem 0;
+  position: relative;
+  background-color: transparent !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.form-wrapper {
+  position: relative;
+  transition: margin .35s ease-in;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+  label {
+    position: absolute;
+    left: 0;
+    top: .5rem;
+    transition: all .35s ease-in;
+  }
+  &.filled, &.focused {
+    margin-top: .75rem;
+    label {
+      top: -.80rem;
+      font-size: 80%;
+      color: $text-muted;
+    }
+  }
+}
+
+textarea {
+  &.form-control {
+    min-height: 150px;
+    height: 150px;
+    max-height: 200px;
+  }
+}

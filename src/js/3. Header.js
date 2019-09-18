@@ -17,12 +17,14 @@
             }
             top.css(css)
             nav.css(css)
+            nav.addClass('affix')
           } else {
             var css = {
               transform: 'translateY(-' + pageYOffset + 'px)',
             }
             top.css(css)
             nav.css(css)
+            nav.removeClass('affix')
           }
         }
       })

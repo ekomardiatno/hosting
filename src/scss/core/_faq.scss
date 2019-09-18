@@ -3,6 +3,7 @@
   flex-direction: row;
   .question {
     flex-basis: 320px;
+    padding-bottom: 320px;
     ul {
       list-style: none;
       padding: 0;
@@ -59,6 +60,7 @@
   .faq-wrapper {
     .question {
       flex-basis: 240px;
+      padding-bottom: 240px;
     }
   }
 }
