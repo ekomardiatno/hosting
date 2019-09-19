@@ -10,7 +10,8 @@
             valLength = valStr.length
         placeholder == undefined ? placeholder = "" : placeholder = placeholder
         idName == undefined ? idName = "" : idName = idName
-        var label = '<label for="' + idName + '">' + placeholder + '</label>'
+        var strRequired = $(this).is(':required') ? '<span class="text-danger">*</span>' : ''
+        var label = '<label for="' + idName + '">' + placeholder + strRequired + '</label>'
         $(this).before(label)
         $(this).removeAttr('placeholder')
         if(valLength > 0) {

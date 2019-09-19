@@ -57,6 +57,12 @@
   &.contact {
     background-image: url(../images/contact.jpg);
   }
+  &.register {
+    background-image: url(../images/register.jpg);
+  }
+  &.login {
+    background-image: url(../images/login.jpg);
+  }
   &::before {
     position: absolute;
     content: "";
