@@ -21,6 +21,7 @@ $warning: $orange;
 $danger: $red;
 $light: #f8f9fa;
 $dark: #343a40;
+$black: #333;
 
 $brand: () !default;
 $brand: map-merge((
@@ -39,5 +40,5 @@ $shadow-md: 0 .75rem .75rem -.35rem rgba(0,0,0,.125);
 $shadow-lg: 0 1rem .75rem -.35rem rgba(0,0,0,.125);
 
 $border-color: #dfdfdf;
-$text-color: #333;
+$text-color: $black;
 $text-muted: #777;
