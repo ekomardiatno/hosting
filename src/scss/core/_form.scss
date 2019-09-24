@@ -30,6 +30,8 @@
       top: -1rem;
       font-size: 80%;
     }
+  }
+  &.focused {
     &::after {
       width: 100%;
     }

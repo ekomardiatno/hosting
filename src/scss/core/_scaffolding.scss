@@ -28,8 +28,10 @@ body {
 
 a {
   color: $primary;
+  transition: all .35s ease-in;
   &:hover {
     color: darken($primary, 5%);
+    text-decoration: none;
   }
   &:focus {
     color: darken($primary, 15%);

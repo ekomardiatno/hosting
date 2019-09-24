@@ -51,18 +51,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  &.faq {
-    background-image: url(../images/faq.jpg);
-  }
-  &.contact {
-    background-image: url(../images/contact.jpg);
-  }
-  &.bg-yellow {
-    background-image: url(../images/bg-yellow.jpg);
-  }
-  &.bg-purple {
-    background-image: url(../images/bg-purple.jpg);
-  }
+  background-image: url(../images/bg-purple.jpg);
   &::before {
     position: absolute;
     content: "";
